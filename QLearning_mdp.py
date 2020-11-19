@@ -117,8 +117,8 @@ def large_compare_vi_pi(P,R):
     
 
 if __name__=='__main__':
-    #P_small,R_small=generate_small_mdp(reward=0.001)
-    #small_compare_vi_pi(P_small,R_small)
+    P_small,R_small=generate_small_mdp(reward=0.001)
+    small_compare_vi_pi(P_small,R_small)
     P_big,R_big=mdptoolbox.example.forest(500,10,5,0.1)
     large_compare_vi_pi(P_big,R_big)
     
